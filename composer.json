@@ -1,0 +1,25 @@
+{
+  "name": "fly/laravel-workers",
+  "description": "Auto-scaled queue workers on Fly.io",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chris Fidao",
+      "email": "fideloper@fly.io"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Fly\\Worker\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "Fly\\Worker\\FlyWorkerServiceProvider"
+        ]
+    }
+  }
+}
