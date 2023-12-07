@@ -1,5 +1,5 @@
 {
-  "name": "fly/laravel-workers",
+  "name": "flyio/laravel-workers",
   "description": "Auto-scaled queue workers on Fly.io",
   "type": "library",
   "license": "MIT",
