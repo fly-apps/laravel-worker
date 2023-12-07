@@ -43,12 +43,17 @@ return [
 
 ## Usage
 
-<!-- todo: Don't auto-schedule the command -->
-This will automatically schedule the `fly:work` command, run on one server, once per minute.
+Add the `fly:work` command to your scheduler to run once a minute, on one server:
+
+```php
+$schedule->command('fly:work')
+    ->onOneServer()
+    ->everyMinute();
+```
 
 This command will scale up (and down) queue workers on Fly.io machines as directed by the Scaler class.
 
-This assumes you are running your web application on Fly.io as well.
+This assumes you are running your [Laravel application on Fly.io](https://fly.io/docs/laravel/) as well!
 
 ## License
 

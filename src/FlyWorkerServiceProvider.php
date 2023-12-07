@@ -24,12 +24,12 @@ class FlyWorkerServiceProvider extends ServiceProvider
                 FlyWorkerCommand::class
             ]);
 
-            $this->app->booted(function () {
-                $schedule = $this->app->make(Schedule::class);
-                $schedule->command('fly:work')
-                    ->onOneServer()
-                    ->everyMinute();
-            });
+//            $this->app->booted(function () {
+//                $schedule = $this->app->make(Schedule::class);
+//                $schedule->command('fly:work')
+//                    ->onOneServer()
+//                    ->everyMinute();
+//            });
         }
     }
 
